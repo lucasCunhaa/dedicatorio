@@ -194,15 +194,27 @@ body{
    
 }
 
+.header{
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:20px;
+}
+
 /* MELANCIA */
 
 .watermelon{
 
-    width:clamp(40px, 8vw, 70px);
+      width:70px;
 
-    top:20px;
-    left:20px;
-     animation:float 4s infinite ease-in-out;
+    position:static;
+
+    animation:float 4s ease-in-out infinite;
 }
 
 /* SCENE */
@@ -393,5 +405,32 @@ body{
     #hint{
 
         font-size:1.4rem;
+    }
+
+      .container{
+
+        min-height:70vh;
+    }
+
+    .message{
+
+        line-height:1.8;
+    }
+
+    .message button{
+
+        width:100%;
+    }
+
+    .header{
+
+        flex-direction:column;
+
+        gap:15px;
+    }
+
+    .watermelon{
+
+        width:55px;
     }
 }
