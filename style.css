@@ -82,10 +82,15 @@ body{
 /* ==========================
    TÍTULO
 ========================== */
+ 
 
 .title{
-    opacity:0;
-    line-height:1.5;
+
+    font-size:clamp(1.4rem, 4vw, 2.5rem);
+
+    text-align:center;
+
+    padding:0 20px;
 
     animation:fadeUp 1.8s ease forwards;
 }
@@ -94,7 +99,13 @@ body{
    BOTÃO
 ========================== */
 
+
 #startBtn{
+
+    width:min(90vw, 350px);
+
+    padding:16px;
+
     animation:pulseGlow 2s infinite;
 }
 
