@@ -81,6 +81,13 @@ body{
     position:relative;
 }
 
+
+.bouquet-wrapper img {
+
+    width: 200px;
+    height: 200px;
+}
+
 .bouquet{
 
     width:450px;
