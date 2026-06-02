@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:black;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+}
+
+/* ===== MELANCIA ===== */
+
+.watermelon{
+    position:absolute;
+    top:30px;
+    left:35px;
+    width:65px;
+
+    animation:float 4s ease-in-out infinite;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+    width:550px;
+    height:60px;
+
+    margin:40px auto;
+
+    background:#151515;
+
+    border-radius:16px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#ff4444;
+}
+
+.navbar .active{
+    color:red;
+}
+
+
+.flowers-container{
+
+    min-height:80vh;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-top:40px;
+}
+
+.title{
+
+    color:white;
+    font-size:2rem;
+
+    margin-bottom:30px;
+}
+
+.bouquet-wrapper{
+
+    position:relative;
+}
+
+.bouquet{
+
+    width:450px;
+    max-width:85vw;
+
+    filter:
+        drop-shadow(0 0 25px rgba(255,255,255,.15));
+
+    animation:
+        appear 1.5s ease,
+        sway 5s ease-in-out infinite;
+}
+
+.message{
+
+    margin-top:30px;
+
+    color:#d9d9d9;
+
+    font-size:1.2rem;
+    text-align:center;
+
+    animation:fadeIn 2s ease;
+}
+
+@keyframes sway{
+
+    0%{
+        transform:rotate(-2deg);
+    }
+
+    50%{
+        transform:rotate(2deg);
+    }
+
+    100%{
+        transform:rotate(-2deg);
+    }
+}
+
+@keyframes appear{
+
+    from{
+
+        opacity:0;
+        transform:
+            translateY(40px)
+            scale(.8);
+    }
+
+    to{
+
+        opacity:1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}

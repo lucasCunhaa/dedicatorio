@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="galeria.css">
+</head>
+<body>
+
+    <!-- Melancia -->
+    <img
+        src="./assets/melancia.png"
+        alt="Melancia"
+        class="watermelon"
+    >
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a href="#" class="active">Galeria</a>
+        <a href="carta.html">Carta</a>
+        <a href="flores.html">Flores</a>
+        <a href="musica.html">Música</a>
+
+    </nav>
+
+    <!-- Conteúdo -->
+    <main>
+
+        <h1 class="titulo">
+            Galeria
+        </h1>
+
+        <section class="gallery">
+
+            <div class="photo-card">
+                <img src="./assets/foto moni1.jpeg" alt="">
+            </div>
+
+            <div class="photo-card">
+                <img src="./assets/FotoSolo.jpeg" alt="">
+            </div>
+
+            <div class="photo-card">
+                <img src="./assets/FotoCuritiba.jpeg" alt="">
+            </div>
+
+            <div class="photo-card">
+                <img src="./assets/fotoPraia.jpeg" alt="">
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+
+        <span id="closeModal">&times;</span>
+
+        <img id="modalImage" src="" alt="">
+
+    </div>
+
+    <script src="galeria.js"></script>
+
+</body>
+</html>

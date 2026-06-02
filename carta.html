@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Carta</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="carta.css">
+</head>
+<body>
+
+<img src="./assets/melancia.png" class="watermelon">
+
+<nav class="navbar">
+    <a href="galeria.html">Galeria</a>
+    <a href="#" class="active">Carta</a>
+    <a href="flores.html">Flores</a>
+    <a href="musica.html">Música</a>
+</nav>
+
+<main class="container">
+
+    <div id="envelopeContainer">
+
+        <div id="envelope">
+
+            ✉️
+
+        </div>
+
+        <p class="hint">
+            Clique na carta para abrir
+        </p>
+
+    </div>
+
+    <section id="messageSection">
+
+        <div class="message">
+
+            <p id="typedText"></p>
+
+            <button onclick="window.location.href='index.html'">
+                Voltar para página inicial
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="carta.js"></script>
+
+</body>
+</html>
