@@ -24,6 +24,15 @@ body{
 
 /* NAVBAR */
 
+.navbar a,
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active{
+
+    color:white;
+    text-decoration:none;
+}
+
 .navbar{
 
     width:min(90vw, 550px);
